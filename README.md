@@ -1,8 +1,4 @@
-# React + Vite
+# Desafio Final do Módulo 1 do Empower Full Stack
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este repositório contém o Desafio Final do primeiro módulo, que consiste em uma página de doação de livros para o projeto Vai na Web.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
