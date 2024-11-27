@@ -9,7 +9,7 @@ export default function Footer() {
   return (
     <footer>
       {/* Parte azul */}
-      <section>
+      <section className={S.boxSocial}>
         <h3>4002-8922</h3>
         <nav>
           <a href="">
@@ -30,7 +30,7 @@ export default function Footer() {
         </nav>
       </section>
       {/* Parte preta */}
-      <section>
+      <section className={S.boxEnd}>
         <p>Layout desenvolvido pela Vai na Web para fins educativos - 2024</p>
       </section>
     </footer>
