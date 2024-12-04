@@ -4,39 +4,37 @@ import LivrosDoados from '../../pages/livrosDoados/LivrosDoados'
 import QueroDoar from '../../pages/queroDoar/QueroDoar'
 import logoLivro from './../../assets/logoLivro.png'
 import lupa from '../../assets/lupa.png'
-import s from './header.module.scss'
+import S from './header.module.scss'
 
 export default function header() {
   return (
     <BrowserRouter>
-      {/** Para evitar conflitos futuros, deve-se colocar uma className na header */}
-      {/** Falta fazer o download das imagens e colocá-las na pasta assets */}
-      <header className={s.header}>
-        <section className={s.logoHeader}>
+      <header>
+        <section className={S.boxLogo}>
           <img src={logoLivro} alt="Imagem de um livro aberto com folhas ao vento" />
           <h1>Livros Vai na Web</h1>
         </section>
-        <nav className={s.navHeader}>
+        <nav className={S.boxMenu}>
           <ul>
             <li>
-              <Link className={s.link} to="/">
+              <Link className={S.link} to="/">
                 Início
               </Link>
             </li>
             <li>
-              <Link className={s.link} to="/livrosdoados">
+              <Link className={S.link} to="/livrosdoados">
                 Livros Doados
               </Link>
             </li>
             <li>
-              <Link className={s.link} to="/querodoar">
+              <Link className={S.link} to="/querodoar">
                 Quero Doar
               </Link>
             </li>
           </ul>
         </nav>
-        <section className={s.barraDeBusca}>
-          <input type="search" name='' id='' placeholder='O que você procura?' />
+        <section className={S.boxSearch}>
+          <input className={S.boxInput} type="text" name='' id='' placeholder='O que você procura?' />
           <button>
             <img src={lupa} alt="Ícone de lupa branco" />
           </button>

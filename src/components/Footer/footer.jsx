@@ -30,7 +30,7 @@ export default function Footer() {
         </nav>
       </section>
       {/* Parte preta */}
-      <section className={S.boxEnd}>
+      <section className={S.boxTexto}>
         <p>Layout desenvolvido pela Vai na Web para fins educativos - 2024</p>
       </section>
     </footer>

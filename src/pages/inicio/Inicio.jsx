@@ -17,20 +17,20 @@ export default function Inicio() {
         <section className={S.boxCard}>
           <article>
             {/* O article se autoexplica */}
-            <img src={networking} alt="" />
-            <p> Oferece livros a quem não tem acesso, ajudando a reduzir a exclusão social.</p>
+            <img src={networking} alt="Imagem de quatro mãos dadas" />
+            <p>Oferece livros a quem não tem acesso, ajudando a reduzir a exclusão social.</p>
           </article>
           <article>
-            <img src={reading} alt="" />
-            <p></p>
+            <img src={reading} alt="Imagem de um boneco segurando um livro aberto" />
+            <p>Estimula o hábito da leitura e o aprendizado contínuo.</p>
           </article>
           <article>
-            <img src={transform} alt="" />
-            <p></p>
+            <img src={transform} alt="Imagem de pessoas observando um outdoor com uma imagem de um punho serrado" />
+            <p>Fornece conhecimento e inspiração, permitindo que indivíduos transformem suas vidas.</p>
           </article>
           <article>
-            <img src={balance} alt="" />
-            <p></p>
+            <img src={balance} alt="Imagem de uma balança equilibrada" />
+            <p>Garante que todos, independetemente de sua condição, tenham oportunidades de aprendizado.</p>
           </article>
         </section>
       </section>

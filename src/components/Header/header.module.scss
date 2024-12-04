@@ -1,16 +1,18 @@
-.header {
+header {
   background: linear-gradient(90deg, #001b2f 0%, #005695 100%);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 20vh;
+  height: 15vh;
 }
 
-.logoHeader {
+.boxLogo {
   display: flex;
-  width: 20%;
-  justify-content: space-around;
+  width: 23vw;
+  justify-content: space-evenly;
   align-items: center;
+  color: white;
+  height: 15vh;
 
   img {
     width: 20%;
@@ -18,16 +20,19 @@
 
   h1 {
     font-size: 30px;
+    font-weight: bold;
     color: #fff;
   }
 }
 
-.navHeader {
-  width: 30%;
+.boxMenu {
+  width: 35vw;
 
   ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
     list-style: none;
   }
 
@@ -38,21 +43,24 @@
   }
 }
 
-.barraDeBusca {
+.boxSearch {
   border: solid #fff;
   border-radius: 20px;
-  margin-right: 1%;
-  width: 20%;
+  margin-right: 20px;
+  padding-right: 20px;
+  width: 17vw;
   height: 6vh;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 
-  input {
+  .boxInput {
     background-color: transparent;
     border: none;
-    width: 60%;
+    outline: none;
+    width: 13vw;
     height: 5vh;
+    padding-left: 20px;
 
     &::placeholder {
       color: #fff;
@@ -64,5 +72,72 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
+  }
+}
+
+@media(max-width: 1170px) {
+  .boxLogo {
+    h1 {
+      font-size: 1.7vw;
+    }
+    img {
+      width: 5vw;
+    }
+  }
+
+  .boxMenu {
+    ul {
+      font-size: 1.6vw;
+    }
+  }
+
+  .boxSearch {
+    width: 20vw;
+  }
+
+  .boxInput {
+    width: 16vw;
+    &::placeholder {
+      font-size: 1.3vw;
+    }
+  }
+}
+
+@media(max-width: 760px) {
+  
+  header {
+    flex-direction: column;
+    height: 25vh;
+    justify-content: space-around;
+  }
+
+  .boxSearch {
+    display: none;
+  }
+
+  .boxLogo {
+    width: 100%;
+    h1 {
+      font-size: 28px;
+    }
+    img {
+      width: 50px;
+    }
+  }
+  .boxMenu {
+    width: 100%;
+    ul {
+      font-size: 22px;
+      justify-content: space-around;
+    }
+
+  }
+}
+
+@media(max-width: 380px) {
+  .boxMenu {
+    ul {
+      font-size: 18px;
+    }
   }
 }
