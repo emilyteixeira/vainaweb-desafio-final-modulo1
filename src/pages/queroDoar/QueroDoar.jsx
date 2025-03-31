@@ -5,13 +5,13 @@ import { useState } from 'react'
 
 export default function QueroDoar() {
 
-  // Declaração dos estados para armazenar os dados do livro
+  // Declaração dos estados para armazenar os dados do livro -> Coleta dados
   const [titulo, setTitulo] = useState('')
   const [categoria, setCategoria] = useState('')
   const [autor, setAutor] = useState('')
   const [imagem_url, setImagemUrl] = useState('')
 
-  // Função assíncrona para enviar os dados do livro para a API
+  // Função assíncrona para enviar os dados do livro para a API -> Envia dados
   const enviarDados = async () => {
     
     const urlApi = 'https://api-livros-vainaweb.onrender.com/doar' // URL da API
