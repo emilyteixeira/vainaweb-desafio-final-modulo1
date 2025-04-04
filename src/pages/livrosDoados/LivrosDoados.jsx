@@ -8,7 +8,7 @@ export default function LivrosDoados() {
   const [livros, setLivros] = useState([]) // Estado para armazenar os livros
 
   const getLivros = async () => {
-      const response = await axios.get('https://api-livros-vainaweb.onrender.com/livros') // URL da API
+      const response = await axios.get('https://api-livros-vainaweb.onrender.com/livros') // URL da API -> A API é a ponte
       setLivros(response.data) // Faz uma filtragem dos dados obtidos
   }
 

@@ -52,16 +52,16 @@ export default function QueroDoar() {
     <section className={S.principal}>
       <section className={S.container}>
         <h2>Por favor, preencha o formulário com suas informações e as do livro:</h2>
-        <form action="">
+        <form onSubmit={(e) => e.preventDefault()}>
           <div>
             <img src={Vector} alt="Imagem de um livro aberto" />
             <h3>Informações do Livro</h3>
           </div>
-          <input type="text" placeholder='Título' />
-          <input type="text" placeholder='Categoria' />
-          <input type="text" placeholder='Autor' />
-          <input type="link" placeholder='Link da Imagem' />
-          <input className={S.doar} type="submit" value="Doar" />
+          <input type="text" placeholder='Título' onChange={capturaTitulo} value={Titulo} />
+          <input type="text" placeholder='Categoria' onChange={capturaCategoria} value={Categoria} />
+          <input type="text" placeholder='Autor' onChange={capturaAutor} value={Autor} /> 
+          <input type="link" placeholder='Link da Imagem' onChange={capturaImagem} value={imagem_url} />
+          <input className={S.doar} onClick={enviarDados} type="submit" value="Doar" />
         </form>
       </section>
     </section>

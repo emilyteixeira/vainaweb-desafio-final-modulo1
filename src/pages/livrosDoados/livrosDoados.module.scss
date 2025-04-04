@@ -4,11 +4,17 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 30px;
+  h2 {
+    height: 100px;
+    display: flex;
+    align-items: center;
+  }
 }
 
 .boxCard {
   width: 85vw;
-  height: 60vh;
+  min-height: 60vh;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -16,25 +22,92 @@
   article {
     border: solid 2px #005695;
     border-radius: 15px;
-    width: 200px;
+    width: 230px;
     height: 30vh;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: space-evenly;
     img {
-      padding-bottom: 20px;
-      width: 30%;
+      width: 40%;
     }
   }
 }
 
-@media(max-width: 900px) {
+@media(max-width: 1000px) {
   .boxDoados {
-    height: 90vh;
+    justify-content: space-around;
   }
 
   .boxCard {
-    height: 80vh;
+    article {
+      width: 200px;
+      height: 25vh;
+    }
+  }
+}
+
+@media(max-width: 800px) {
+  .boxDoados {
+    justify-content: space-around;
+  }
+
+  .boxCard {
+    article {
+      width: 150px;
+      height: 20vh;
+    }
+  }
+}
+
+@media(max-width: 600px) {
+  .boxDoados {
+    justify-content: space-around;
+  }
+
+  .boxCard {
+    article {
+      width: 120px;
+      height: 15vh;
+    }
+  }
+}
+
+@media(max-width: 400px) {
+  .boxDoados {
+    justify-content: space-around;
+  }
+
+  .boxCard {
+    article {
+      width: 100px;
+      height: 10vh;
+    }
+  }
+}
+
+@media(max-width: 300px) {
+  .boxDoados {
+    justify-content: space-around;
+  }
+
+  .boxCard {
+    article {
+      width: 80px;
+      height: 8vh;
+    }
+  }
+}
+
+@media(max-width: 200px) {
+  .boxDoados {
+    justify-content: space-around;
+  }
+
+  .boxCard {
+    article {
+      width: 60px;
+      height: 6vh;
+    }
   }
 }
