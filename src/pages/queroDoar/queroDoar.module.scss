@@ -1,88 +1,123 @@
 .principal {
-  height: 80vh;
+  min-height: 100vh;
+  padding: 2rem 1rem;
   display: flex;
   justify-content: center;
 }
 
 .container {
+  width: 100%;
+  max-width: 1200px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
+  padding: 1rem;
+  
   h2 {
     text-align: center;
+    font-size: clamp(1.25rem, 2.5vw, 2rem);
+    margin-bottom: 2rem;
   }
+  
   form {
     border: solid 2px #005695;
     border-radius: 15px;
-    width: 25vw;
-    height: 60vh;
+    width: min(90%, 500px);
+    min-height: 400px;
+    padding: 2rem 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    gap: 1rem;
+    
     div {
       color: #005695;
-      width: 50%;
+      width: 100%;
+      max-width: 300px;
       display: flex;
       align-items: center;
-      justify-content: space-evenly;
+      justify-content: center;
+      gap: 1rem;
+      padding: 0.5rem;
+      
+      img {
+        width: clamp(40px, 15%, 80px);
+        height: auto;
+      }
+      
+      h3 {
+        font-size: clamp(1rem, 4vw, 1.25rem);
+        font-weight: bold;
+        color: #005695;
+        text-align: center;
+      }
     }
+    
     input {
-      width: 80%;
-      height: 5vh;
+      width: 90%;
+      height: 48px;
       border: solid 2px #005695;
       border-radius: 10px;
       outline: none;
-      padding-left: 20px;
+      padding: 0 1rem;
+      
       &::placeholder {
         color: black;
-        font-size: 15px;
+        font-size: 0.9rem;
       }
     }
   }
 }
 
 input:nth-child(6) {
-  width: 40%;
-  height: 6vh;
-  padding-left: 0;
+  width: clamp(150px, 40%, 200px);
+  height: 48px;
+  padding: 0;
   background-color: #005695;
   color: white;
   cursor: pointer;
-  font-size: 18px;
+  font-size: clamp(1rem, 3vw, 1.125rem);
 }
 
-@media(max-width: 1070px) {
-  
-  form {
-    width: 350px;
-  }
-}
-
-@media(max-width: 650px) {
+@media (max-width: 768px) {
   .container {
-    height: 90vh;
-    h2 {
-      font-size: 20px;
+    form {
+      width: 95%;
+      gap: 0.75rem;
+      
+      div {
+        flex-direction: column;
+        text-align: center;
+        
+        img {
+          width: clamp(30px, 20%, 60px);
+        }
+        
+        h3 {
+          margin: 0.5rem 0;
+        }
+      }
     }
   }
-
-  .principal {
-    height: auto;
-  }
 }
 
-@media(max-width: 450px) {
-
-  form {
-    width: 75vw;
-    div {
-      img {
-        width: 13vw;
-      }
-      h3 {
-        font-size: 4.5vw;
+@media (max-width: 480px) {
+  .principal {
+    padding: 1rem 0.5rem;
+  }
+  
+  .container {
+    h2 {
+      margin-bottom: 1rem;
+    }
+    
+    form {
+      padding: 1rem 0.5rem;
+      
+      input {
+        height: 40px;
       }
     }
   }

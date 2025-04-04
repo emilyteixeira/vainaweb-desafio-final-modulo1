@@ -57,9 +57,9 @@ export default function QueroDoar() {
             <img src={Vector} alt="Imagem de um livro aberto" />
             <h3>Informações do Livro</h3>
           </div>
-          <input type="text" placeholder='Título' onChange={capturaTitulo} value={Titulo} />
-          <input type="text" placeholder='Categoria' onChange={capturaCategoria} value={Categoria} />
-          <input type="text" placeholder='Autor' onChange={capturaAutor} value={Autor} /> 
+          <input type="text" placeholder='Título' onChange={capturaTitulo} value={titulo} />
+          <input type="text" placeholder='Categoria' onChange={capturaCategoria} value={categoria} />
+          <input type="text" placeholder='Autor' onChange={capturaAutor} value={autor} /> 
           <input type="link" placeholder='Link da Imagem' onChange={capturaImagem} value={imagem_url} />
           <input className={S.doar} onClick={enviarDados} type="submit" value="Doar" />
         </form>
